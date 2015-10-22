@@ -26,8 +26,8 @@ containing the digits 0-9 with a value between `PHP_INT_MIN` and `PHP_INT_MAX`.
 
 * Floats
 * Integers
-* Strings with an optional positive/negative sign, without leading zeros, and
-matching the format described at http://php.net/manual/en/language.types.float.php.
+* Strings with an optional positive/negative sign matching the format described
+at http://php.net/manual/en/language.types.float.php.
 
 ### `safe_string`
 
@@ -40,21 +40,9 @@ The *safe_* functions will always return false if passed `null`, `true` or
 `false`, an array, resource, or object (with the exception of objects with a
 `__toString` method passed to `safe_string`).
 
-## Installation
+## Install via Composer
 
-To install via [Composer](https://getcomposer.org/),
-add the following to the composer.json file in your project root:
-
-```json
-{
-    "require": {
-        "theodorejb/polycast": "~0.9"
-    }
-}
-```
-
-Then run `composer install` and require `vendor/autoload.php`
-in your application's bootstrap file.
+`composer require theodorejb/polycast`
 
 ## Usage examples
 
